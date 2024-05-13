@@ -31,7 +31,7 @@ app.use(errorHandler);
 
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/mernBlogDB");
+mongoose.connect(${process.env.MONGO_URL});
 
 
 
